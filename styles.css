@@ -105,6 +105,31 @@ main {
   margin: 10% 0 10% 0;
 }
 
+footer {
+  max-width: 750px;
+  margin: auto;
+  display: flex;
+  padding: 5% 0 5% 0;
+}
+
+.contact, .cellar-door, .social-media {
+  width: max-content;
+  margin: auto;
+  position: relative;
+}
+
+.contact {
+  right: 10%;
+}
+
+.cellar-door {
+  right: 5%;
+}
+
+.social-media {
+  left: 10%;
+}
+
 @media only screen and (max-width: 768px) {
   /* Navbar and Hamburger Menu */
   label {
@@ -157,6 +182,16 @@ main {
     margin: 0 auto;
     margin-top: 10px;
     margin-bottom: 10px;
+  }
+
+  footer {
+    display: block;
+  }
+
+  .contact, .cellar-door, .social-media {
+    position: inherit;
+    text-align: center;
+    padding: 5% 0 5% 0;
   }
 
 
