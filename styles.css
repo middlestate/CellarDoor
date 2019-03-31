@@ -40,10 +40,29 @@ label {
 
 /* Main Content */
 main {
-  margin: 0 20% 0 20%;
+  max-width: 750px;
+  margin: auto;
 }
 
-@media only screen and (max-width: 510px) {
+.events-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+
+.events-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.event-1, .event-2, .event-3 {
+  flex-basis: 200px;
+  padding: 1.5%;
+  margin: 1.5%;
+  border: 1px solid black;
+}
+
+@media only screen and (max-width: 768px) {
   /* Navbar and Hamburger Menu */
   label {
     display: block;
@@ -63,6 +82,19 @@ main {
 
   #toggle:checked + .menu {
     display: block;
+  }
+
+  main {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .events-header {
+    justify-content: center;
+  }
+
+  .title-container > * {
+    text-align: center;
   }
 
 
