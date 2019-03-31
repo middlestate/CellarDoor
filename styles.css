@@ -4,6 +4,7 @@ html, body {
   margin: 0;
 }
 
+/* Navbar and Hamburger Menu */
 .nav {
   border-bottom: 1px solid lightgrey;
   text-align: right;
@@ -37,7 +38,13 @@ label {
   display: none;
 }
 
+/* Main Content */
+main {
+  margin: 0 20% 0 20%;
+}
+
 @media only screen and (max-width: 510px) {
+  /* Navbar and Hamburger Menu */
   label {
     display: block;
     cursor: pointer;
