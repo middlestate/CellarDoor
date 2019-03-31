@@ -48,13 +48,13 @@ main {
   margin: 15% 0 15% 0;
 }
 
-.events-header {
+.header {
   display: flex;
   flex-wrap: wrap;
   justify-content: left;
 }
 
-.events-header > button {
+.header > button {
   margin: 10px;
   padding: 5px;
 }
@@ -89,6 +89,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  margin: 10% 0 10% 0;
 }
 
 .artist-container, .spotify-container {
@@ -98,6 +99,10 @@ main {
 .artist-container > button {
   display: flex;
   margin: 10px 0 10px 0;
+}
+
+.food-and-drinks {
+  margin: 10% 0 10% 0;
 }
 
 @media only screen and (max-width: 768px) {
@@ -127,9 +132,12 @@ main {
     margin: 0 auto;
   }
 
-  .events-header {
+  .header {
     justify-content: center;
     padding: 5%;
+    min-width: 150px;
+    max-width: 155px;
+    margin: 0 auto;
   }
 
   .music-container {
