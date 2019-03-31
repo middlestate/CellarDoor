@@ -96,6 +96,7 @@ main {
 
   .events-header {
     justify-content: center;
+    padding: 5%;
   }
 
   .title-container > * {
