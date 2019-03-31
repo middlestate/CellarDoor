@@ -44,6 +44,10 @@ main {
   margin: auto;
 }
 
+.title-container {
+  margin: 15% 0 15% 0;
+}
+
 .events-header {
   display: flex;
   flex-wrap: wrap;
