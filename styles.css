@@ -54,6 +54,11 @@ main {
   justify-content: left;
 }
 
+.events-header > button {
+  margin: 10px;
+  padding: 5px;
+}
+
 .events-container {
   display: flex;
   flex-wrap: wrap;
@@ -65,6 +70,19 @@ main {
   margin: 1.5%;
   border: 1px solid black;
   min-width: 200px;
+}
+
+.about-us {
+  margin: 10% 0 10% 0;
+}
+
+.about-us > .title {
+  text-align: center;
+}
+
+.about-us > button {
+  display: block;
+  margin: 0 auto;
 }
 
 @media only screen and (max-width: 768px) {
