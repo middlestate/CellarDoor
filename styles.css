@@ -203,7 +203,7 @@ button:hover {
 }
 
 .about-us > .title {
-  text-align: center;
+  text-align: left;
   font-family: Gilroy-SemiBold;
   font-size: xx-large;
 }
