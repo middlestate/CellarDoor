@@ -263,6 +263,10 @@ button {
 }
 
 footer {
+  background-color: #AD0E2B;
+}
+
+.footer-container {
   max-width: 750px;
   margin: auto;
   display: flex;
@@ -279,8 +283,18 @@ footer {
   right: 10%;
 }
 
+.contact > h4 {
+  color: #000000;
+  font-family: Gilroy-SemiBold;
+}
+
 .cellar-door {
+  color: #000000;
+  font-family: TrixieText;
+  font-size: xx-large;
   right: 5%;
+  width: 100px;
+  text-align: center;
 }
 
 .social-media {
@@ -407,7 +421,7 @@ footer {
     text-align: center;
   }
 
-  footer {
+  .footer-container {
     display: block;
   }
 
