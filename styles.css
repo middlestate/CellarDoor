@@ -374,7 +374,7 @@ footer {
   }
 
   main {
-    width: 50%;
+    width: 75%;
     margin: 0 auto;
   }
 
@@ -433,8 +433,8 @@ footer {
   }
 
   .title-container > img {
-    width: 100%;
-    margin-left: 0;
+    width: 65%;
+    margin-left: 15%;
   }
 
   .title-container > .subtitle {
