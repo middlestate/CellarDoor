@@ -229,7 +229,8 @@ button:hover {
 }
 
 .artist-container, .spotify-container {
-  width: 50%;
+  width: 45%;
+  padding: 2%;
 }
 
 .artist-container > img {
@@ -453,6 +454,10 @@ footer {
 
   .artist-name {
     font-size: x-large;
+  }
+
+  .spotify-container {
+    height: 400px;
   }
 
   .food-and-drinks > .header > h3 {
