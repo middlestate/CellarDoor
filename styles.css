@@ -421,6 +421,7 @@ footer {
   .music-container {
     justify-content: center;
     text-align: center;
+    margin: 25% 0 25% 0;
   }
 
   .artist-container > .title {
@@ -451,6 +452,7 @@ footer {
 
   .artist-container, .spotify-container {
     width: 100%;
+    margin: 10% 0 10% 0;
   }
 
   .artist-container > button {
