@@ -248,6 +248,20 @@ button {
   margin: 10% 0 10% 0;
 }
 
+.food-and-drinks > .header > h3 {
+  font-family: Gilroy-SemiBold;
+  font-size: xx-large;
+}
+
+.food-and-drinks > .description {
+  font-size: 18px;
+  font-family: Gilroy-Light;
+  color: #EBEBEB;
+  font-weight: 100;
+  padding-bottom: 20px;
+  margin-top: 0;
+}
+
 footer {
   max-width: 750px;
   margin: auto;
@@ -386,6 +400,11 @@ footer {
 
   .artist-name {
     font-size: x-large;
+  }
+
+  .food-and-drinks > .header > h3 {
+    font-size: x-large;
+    text-align: center;
   }
 
   footer {
