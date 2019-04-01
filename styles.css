@@ -171,7 +171,8 @@ button:hover {
 .event-1, .event-2, .event-3 {
   flex-basis: 200px;
   padding: 1.5%;
-  margin: 1.5%;
+  /* margin: 1.5%; */
+  margin: auto;
   border: 0.5px solid #707070;
   min-width: 200px;
   font-family: Gilroy-SemiBold;
@@ -491,6 +492,11 @@ footer {
     margin-left: 0;
   }
 
+  .event-1 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
   .contact {
     right: 0;
   }
@@ -514,6 +520,6 @@ footer {
   }
 
   .upcoming-events > .header {
-    margin-left: 10%;
+    margin-left: 4%;
   }
 }
