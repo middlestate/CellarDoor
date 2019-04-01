@@ -152,8 +152,30 @@ button {
   flex-basis: 200px;
   padding: 1.5%;
   margin: 1.5%;
-  border: 1px solid black;
+  border: 0.5px solid #707070;
   min-width: 200px;
+  font-family: Gilroy-SemiBold;
+}
+
+.date {
+  font-size: 13px;
+}
+
+.event-1 > .title, .event-2 > .title, .event-3 > .title {
+  font-size: 23px;
+}
+
+.event-1 > .description, .event-2 > .description, .event-3 > .description {
+  font-size: 16px;
+  font-family: Gilroy-Light;
+  color: #EBEBEB;
+  font-weight: 100;
+}
+
+.details {
+  font-weight: 100;
+  letter-spacing: 1px;
+  color: #AD0E2B;
 }
 
 .about-us {
