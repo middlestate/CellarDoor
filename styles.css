@@ -398,6 +398,7 @@ footer {
   
   .about-us {
     left: 0px;
+    margin: 25% 0 25% 0;
   }
   
   .calendar {
@@ -468,6 +469,10 @@ footer {
 
   .spotify-container {
     height: 400px;
+  }
+
+  .food-and-drinks {
+    margin: 25% 0 25% 0;
   }
 
   .food-and-drinks > .header > h3 {
