@@ -6,6 +6,12 @@ html, body {
   color: #ffffff;
 }
 
+body {
+  background-image: url("images/main_background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 hr {
   border: 0.5px solid #707070;
 }
