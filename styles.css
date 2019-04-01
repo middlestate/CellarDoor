@@ -184,11 +184,21 @@ button {
 
 .about-us > .title {
   text-align: center;
+  font-family: Gilroy-SemiBold;
+  font-size: xx-large;
 }
 
 .about-us > button {
   display: block;
   margin: 0 auto;
+}
+
+.about-us > .description {
+  font-size: 18px;
+  font-family: Gilroy-Light;
+  color: #EBEBEB;
+  font-weight: 100;
+  padding-bottom: 20px;
 }
 
 .music-container {
@@ -323,6 +333,10 @@ footer {
   .upcoming-events > .header > h3 {
     font-size: 17px;
     margin-left: 0;
+  }
+
+  .about-us > .title {
+    font-size: x-large;
   }
 
   .artist-container, .spotify-container {
