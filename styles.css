@@ -112,12 +112,17 @@ main {
   margin: 15% 0 15% 0;
 }
 
-.title-container > .title {
+/* .title-container > .title {
   font-family: TrixieText;
   font-size: 8vh;
   width: 50%;
   text-align: center;
   margin-bottom: 0;
+} */
+
+.title-container > img {
+  width: 35%;
+  margin-left: 7%;
 }
 
 .title-container > .subtitle {
@@ -290,7 +295,15 @@ footer {
   padding: 5% 0 5% 0;
 }
 
-.contact, .cellar-door, .social-media {
+.footer-container > img {
+  width: 100%;
+  max-width: 100px;
+  max-height: 50px;
+  display: block;
+  margin: 0 auto;
+}
+
+.contact, .social-media {
   width: max-content;
   margin: auto;
   position: relative;
@@ -313,13 +326,13 @@ footer {
   margin-top: 10px;
 }
 
-.cellar-door {
+/* .cellar-door {
   color: #000000;
   font-family: TrixieText;
   font-size: xx-large;
   width: 100px;
   text-align: center;
-}
+} */
 
 .social-media {
   display: flex;
@@ -419,10 +432,15 @@ footer {
     text-align: center;
   }
 
-  .title-container > .title {
+  /* .title-container > .title {
     font-size: 6vh;
     margin: auto;
     width: 100%;
+  } */
+
+  .title-container > img {
+    width: 100%;
+    margin-left: 0;
   }
 
   .title-container > .subtitle {
@@ -469,7 +487,7 @@ footer {
     display: block;
   }
 
-  .contact, .cellar-door, .social-media {
+  .contact, .social-media {
     position: inherit;
     text-align: center;
     padding: 5% 0 5% 0;
