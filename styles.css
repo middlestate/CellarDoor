@@ -16,6 +16,11 @@ html, body {
   src: url(fonts/Radomir\ Tinkov\ -\ Gilroy-Light.otf) format("opentype");
 }
 
+@font-face {
+  font-family: Gilroy-SemiBold;
+  src: url(fonts/Radomir\ Tinkov\ -\ Gilroy-SemiBold.otf) format("opentype");
+}
+
 /* Navbar and Hamburger Menu */
 .nav {
   text-align: right;
@@ -111,11 +116,31 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: left;
+  align-items: center;
 }
 
-.header > button {
+.upcoming-events > .header > h3 {
+  font-family: Gilroy-SemiBold;
+  font-size: 21px;
+  margin-left: 3%;
+  letter-spacing: 1px;
+  color: #AD0E2B;
+}
+
+button {
+  background-color: transparent;
+  color: #ffffff;
+  border-radius: 25px;
+  width: 140px;
+  height: 33px;
+  border: 2px solid #AD0E2B;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1px;
+  line-height: 20px;
   margin: 10px;
   padding: 5px;
+  text-align: center;
 }
 
 .events-container {
@@ -156,7 +181,7 @@ main {
 }
 
 .artist-container > button {
-  display: flex;
+  display: inherit;
   margin: 10px 0 10px 0;
 }
 
@@ -271,6 +296,11 @@ footer {
 
   .title-container > .subtitle {
     width: 100%;
+  }
+
+  .upcoming-events > .header > h3 {
+    font-size: 17px;
+    margin-left: 0;
   }
 
   .artist-container, .spotify-container {
