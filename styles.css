@@ -310,14 +310,29 @@ footer {
   color: #000000;
   font-family: TrixieText;
   font-size: xx-large;
-  right: 5%;
   width: 100px;
   text-align: center;
 }
 
 .social-media {
+  display: flex;
   left: 10%;
 }
+
+.social-icon-container {
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+  background-color: black;
+  border-radius: 25px;
+}
+
+.social-icon-container > i {
+  position: relative;
+  top: 12px;
+  left: 12px;
+}
+
 
 @media only screen and (max-width: 768px) {
   /* Navbar and Hamburger Menu */
@@ -447,6 +462,10 @@ footer {
     position: inherit;
     text-align: center;
     padding: 5% 0 5% 0;
+  }
+
+  .social-icon-container > i {
+    left: 0;
   }
 
 
