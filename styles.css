@@ -221,6 +221,11 @@ button {
   margin: 10px 0 10px 0;
 }
 
+.artist-container > .title {
+  font-family: Gilroy-SemiBold;
+  font-size: xx-large;
+}
+
 .food-and-drinks {
   margin: 10% 0 10% 0;
 }
@@ -265,9 +270,9 @@ footer {
 
   .menu a {
     display: block;
-    border-bottom: 1px solid lightgrey;
+    border-bottom: 1px solid black;
     margin: 0;
-    background-color: red;
+    background-color: #ffffff;
     color: #000000;
   }
 
@@ -318,6 +323,10 @@ footer {
   .music-container {
     justify-content: center;
     text-align: center;
+  }
+
+  .artist-container > .title {
+    font-size: x-large;
   }
 
   .title-container > * {
