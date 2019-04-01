@@ -6,6 +6,10 @@ html, body {
   color: #ffffff;
 }
 
+hr {
+  border: 0.5px solid #707070;
+}
+
 @font-face {
   font-family: TrixieText;
   src: url(fonts/TrixieText.ttf) format("truetype");
