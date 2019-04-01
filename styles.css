@@ -6,6 +6,16 @@ html, body {
   color: #ffffff;
 }
 
+@font-face {
+  font-family: TrixieText;
+  src: url(fonts/TrixieText.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: Gilroy-Light;
+  src: url(fonts/Radomir\ Tinkov\ -\ Gilroy-Light.otf) format("opentype");
+}
+
 /* Navbar and Hamburger Menu */
 .nav {
   text-align: right;
@@ -79,6 +89,22 @@ main {
 
 .title-container {
   margin: 15% 0 15% 0;
+}
+
+.title-container > .title {
+  font-family: TrixieText;
+  font-size: 8vh;
+  width: 50%;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.title-container > .subtitle {
+  font-family: Gilroy-Light;
+  width: 50%;
+  text-align: center;
+  font-weight: 100;
+  letter-spacing: 2px;
 }
 
 .header {
@@ -235,6 +261,16 @@ footer {
 
   .title-container > * {
     text-align: center;
+  }
+
+  .title-container > .title {
+    font-size: 6vh;
+    margin: auto;
+    width: 100%;
+  }
+
+  .title-container > .subtitle {
+    width: 100%;
   }
 
   .artist-container, .spotify-container {
