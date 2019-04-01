@@ -291,11 +291,19 @@ footer {
 
 .contact {
   right: 10%;
+  font-weight: bold;
 }
 
 .contact > h4 {
   color: #000000;
+  font-family: sans-serif;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+.contact > h5 {
   font-family: Gilroy-SemiBold;
+  margin-top: 10px;
 }
 
 .cellar-door {
