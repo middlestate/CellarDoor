@@ -42,7 +42,7 @@ hr {
   text-align: center;
   max-width: 1000px;
   margin: 0 auto;
-  margin-top: 1%;
+  /* margin-top: 1%; */
 }
 
 .menu a {
@@ -56,8 +56,8 @@ hr {
 }
 
 .nav-item {
-  border-top: 0.5px solid #707070;
-  border-bottom: 0.5px solid #707070;
+  /* border-top: 0.5px solid #707070;
+  border-bottom: 0.5px solid #707070; */
   padding: 15px 60px;
   font-size: 14px;
 }
@@ -80,7 +80,7 @@ hr {
 
 .cellar-door-icon {
   padding: 40px 35px;
-  border: 0.5px solid #707070;
+  /* border: 0.5px solid #707070; */
 }
 
 .cellar-door-icon > img {
