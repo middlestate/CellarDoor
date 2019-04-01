@@ -40,7 +40,7 @@ hr {
 
 .menu {
   text-align: center;
-  max-width: 750px;
+  max-width: 1000px;
   margin: 0 auto;
   margin-top: 1%;
 }
@@ -58,7 +58,7 @@ hr {
 .nav-item {
   border-top: 0.5px solid #707070;
   border-bottom: 0.5px solid #707070;
-  padding: 15px 30px;
+  padding: 15px 60px;
   font-size: 14px;
 }
 
@@ -104,21 +104,13 @@ label {
 
 /* Main Content */
 main {
-  max-width: 750px;
+  max-width: 1000px;
   margin: auto;
 }
 
 .title-container {
   margin: 15% 0 15% 0;
 }
-
-/* .title-container > .title {
-  font-family: TrixieText;
-  font-size: 8vh;
-  width: 50%;
-  text-align: center;
-  margin-bottom: 0;
-} */
 
 .title-container > img {
   width: 35%;
@@ -138,6 +130,9 @@ main {
   flex-wrap: wrap;
   justify-content: left;
   align-items: center;
+  width: 50%;
+  margin: auto;
+  margin-left: 10%;
 }
 
 .upcoming-events > .header > h3 {
@@ -289,7 +284,7 @@ footer {
 }
 
 .footer-container {
-  max-width: 750px;
+  max-width: 1000px;
   margin: auto;
   display: flex;
   padding: 5% 0 5% 0;
@@ -326,14 +321,6 @@ footer {
   margin-top: 10px;
 }
 
-/* .cellar-door {
-  color: #000000;
-  font-family: TrixieText;
-  font-size: xx-large;
-  width: 100px;
-  text-align: center;
-} */
-
 .social-media {
   display: flex;
   left: 10%;
@@ -352,7 +339,6 @@ footer {
   top: 12px;
   left: 12px;
 }
-
 
 @media only screen and (max-width: 768px) {
   /* Navbar and Hamburger Menu */
@@ -432,12 +418,6 @@ footer {
     text-align: center;
   }
 
-  /* .title-container > .title {
-    font-size: 6vh;
-    margin: auto;
-    width: 100%;
-  } */
-
   .title-container > img {
     width: 100%;
     margin-left: 0;
@@ -496,6 +476,44 @@ footer {
   .social-icon-container > i {
     left: 0;
   }
+}
 
+@media only screen and (min-width: 769px) {
+  main, .menu, .footer-container {
+    max-width: 750px;
+  }
 
+  .nav-item {
+    padding: 15px 30px;
+  }
+
+  .upcoming-events > .header {
+    margin-left: 0;
+  }
+
+  .contact {
+    right: 0;
+  }
+
+  .social-media {
+    left: 0;
+  }
+
+  .food-and-drinks > .header {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  main, .menu, .footer-container {
+    max-width: 1000px;
+  }
+
+  .nav-item {
+    padding: 15px 60px;
+  }
+
+  .upcoming-events > .header {
+    margin-left: 10%;
+  }
 }
