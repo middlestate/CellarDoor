@@ -33,7 +33,7 @@ html, body {
 .menu a {
   clear: right;
   text-decoration: none;
-  color: #ffffff;
+  color: #EBEBEB;
   line-height: 70px;
   font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
@@ -41,8 +41,8 @@ html, body {
 }
 
 .nav-item {
-  border-top: 0.5px solid #ffffff;
-  border-bottom: 0.5px solid #ffffff;
+  border-top: 0.5px solid #707070;
+  border-bottom: 0.5px solid #707070;
   padding: 15px 30px;
   font-size: 14px;
 }
@@ -65,7 +65,7 @@ html, body {
 
 .cellar-door-icon {
   padding: 40px 35px;
-  border: 0.5px solid #ffff;
+  border: 0.5px solid #707070;
 }
 
 label {
