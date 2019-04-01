@@ -413,6 +413,10 @@ footer {
     border: none;
   }
 
+  .event-1, .event-2, .event-3 {
+    margin: 25px;
+  }
+
   .music-container {
     justify-content: center;
     text-align: center;
