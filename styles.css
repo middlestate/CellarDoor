@@ -216,6 +216,10 @@ button {
   width: 50%;
 }
 
+.artist-container > img {
+  width: 100%;
+}
+
 .artist-container > button {
   display: inherit;
   margin: 10px 0 10px 0;
@@ -224,6 +228,20 @@ button {
 .artist-container > .title {
   font-family: Gilroy-SemiBold;
   font-size: xx-large;
+}
+
+.artist-name {
+  font-family: Gilroy-SemiBold;
+  font-size: xx-large;
+  color: #AD0E2B;
+  margin-bottom: 0;
+}
+
+.artist-container > .description {
+  font-family: Gilroy-SemiBold;
+  font-size: x-large;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .food-and-drinks {
@@ -360,6 +378,14 @@ footer {
     margin: 0 auto;
     margin-top: 10px;
     margin-bottom: 10px;
+  }
+
+  .artist-container > .description {
+    font-size: large;
+  }
+
+  .artist-name {
+    font-size: x-large;
   }
 
   footer {
