@@ -147,6 +147,10 @@ button {
   text-align: center;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 .events-container {
   display: flex;
   flex-wrap: wrap;
