@@ -13,12 +13,6 @@ html, body {
   color: #ffffff;
 }
 
-/* body {
-  background-image: url("images/main_background.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-} */
-
 hr {
   border: 0.5px solid #707070;
 }
@@ -63,8 +57,6 @@ hr {
 }
 
 .nav-item {
-  /* border-top: 0.5px solid #707070;
-  border-bottom: 0.5px solid #707070; */
   padding: 15px 60px;
   font-size: 14px;
 }
@@ -87,7 +79,6 @@ hr {
 
 .cellar-door-icon {
   padding: 40px 35px;
-  /* border: 0.5px solid #707070; */
 }
 
 .cellar-door-icon > img {
@@ -115,176 +106,22 @@ main {
   margin: auto;
 }
 
-.title-container {
-  margin: 15% 0 15% 0;
-}
-
-.title-container > img {
-  width: 35%;
-  margin-left: 7%;
-}
-
-.title-container > .subtitle {
-  font-family: Gilroy-Light;
-  width: 50%;
-  text-align: center;
-  font-weight: 100;
-  letter-spacing: 2px;
-}
-
-.header {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: left;
-  align-items: center;
-  width: 50%;
-  margin: auto;
-  margin-left: 10%;
-}
-
-.upcoming-events > .header > h3 {
-  font-family: Gilroy-SemiBold;
-  font-size: 21px;
-  margin-left: 3%;
-  letter-spacing: 1px;
-  color: #AD0E2B;
-}
-
-button {
-  background-color: transparent;
-  color: #ffffff;
-  border-radius: 25px;
-  width: 140px;
-  height: 33px;
-  border: 2px solid #AD0E2B;
-  text-transform: uppercase;
-  font-size: 12px;
-  letter-spacing: 1px;
-  line-height: 20px;
-  margin: 10px;
-  padding: 5px;
-  text-align: center;
-}
-
-button:hover {
-  cursor: pointer;
-}
-
-.events-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.event-1, .event-2, .event-3 {
-  flex-basis: 200px;
-  padding: 1.5%;
-  /* margin: 1.5%; */
-  margin: auto;
-  border: 0.5px solid #707070;
-  min-width: 250px;
-  font-family: Gilroy-SemiBold;
-}
-
-.date {
-  font-size: 13px;
-}
-
-.event-1 > .title, .event-2 > .title, .event-3 > .title {
-  font-size: 23px;
-}
-
-.event-1 > .description, .event-2 > .description, .event-3 > .description {
-  font-size: 16px;
-  font-family: Gilroy-Light;
-  color: #EBEBEB;
-  font-weight: 100;
-}
-
-.details {
-  font-weight: 100;
-  letter-spacing: 1px;
-  color: #AD0E2B;
-}
-
-.about-us {
+.about-intro {
   margin: 10%;
 }
 
-.about-us > .title {
+.about-intro > .title {
   text-align: center;
   font-family: Gilroy-SemiBold;
   font-size: xx-large;
 }
 
-.about-us > button {
-  display: block;
-  margin: 0 auto;
-}
-
-.about-us > .description {
+.about-intro > .description {
   font-size: 18px;
   font-family: Gilroy-Light;
   color: #EBEBEB;
   font-weight: 100;
   padding-bottom: 20px;
-}
-
-.music-container {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  margin: 10% 0 10% 0;
-}
-
-.artist-container, .spotify-container {
-  width: 45%;
-  padding: 2%;
-}
-
-.artist-container > img {
-  width: 100%;
-}
-
-.artist-container > button {
-  display: inherit;
-  margin: 10px 0 10px 0;
-}
-
-.artist-container > .title {
-  font-family: Gilroy-SemiBold;
-  font-size: xx-large;
-}
-
-.artist-name {
-  font-family: Gilroy-SemiBold;
-  font-size: xx-large;
-  color: #AD0E2B;
-  margin-bottom: 0;
-}
-
-.artist-container > .description {
-  font-family: Gilroy-SemiBold;
-  font-size: x-large;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.food-and-drinks {
-  margin: 10% 0 10% 0;
-}
-
-.food-and-drinks > .header > h3 {
-  font-family: Gilroy-SemiBold;
-  font-size: xx-large;
-}
-
-.food-and-drinks > .description {
-  font-size: 18px;
-  font-family: Gilroy-Light;
-  color: #EBEBEB;
-  font-weight: 100;
-  padding-bottom: 20px;
-  margin-top: 0;
 }
 
 footer {
@@ -388,14 +225,6 @@ footer {
     margin: 0 auto;
   }
 
-  .header {
-    justify-content: center;
-    padding: 5%;
-    min-width: 150px;
-    max-width: 155px;
-    margin: 0 auto;
-  }
-
   .nav-item {
     border-top: none;
     border-bottom: none;
@@ -424,72 +253,8 @@ footer {
     border: none;
   }
 
-  .event-1, .event-2, .event-3 {
-    margin: 25px;
-  }
-
-  .music-container {
-    justify-content: center;
-    text-align: center;
-    margin: 25% 0 25% 0;
-  }
-
-  .artist-container > .title {
-    font-size: x-large;
-  }
-
-  .title-container > * {
-    text-align: center;
-  }
-
-  .title-container > img {
-    width: 65%;
-    margin-left: 15%;
-  }
-
-  .title-container > .subtitle {
-    width: 100%;
-  }
-
-  .upcoming-events > .header > h3 {
-    font-size: 17px;
-    margin-left: 0;
-  }
-
   .about-us > .title {
     font-size: x-large;
-  }
-
-  .artist-container, .spotify-container {
-    width: 100%;
-    margin: 10% 0 10% 0;
-  }
-
-  .artist-container > button {
-    margin: 0 auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-
-  .artist-container > .description {
-    font-size: large;
-  }
-
-  .artist-name {
-    font-size: x-large;
-  }
-
-  .spotify-container {
-    height: 400px;
-  }
-
-  .food-and-drinks {
-    margin: 25% 0 25% 0;
-  }
-
-  .food-and-drinks > .header > h3 {
-    font-size: x-large;
-    text-align: center;
   }
 
   .footer-container {
@@ -516,29 +281,12 @@ footer {
     padding: 15px 30px;
   }
 
-  .upcoming-events > .header {
-    margin-left: 4%;
-  }
-
-  .event-1 {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-
-  .event-3 {
-    margin-top: 50px;
-  }
-
   .contact {
     right: 0;
   }
 
   .social-media {
     left: 0;
-  }
-
-  .food-and-drinks > .header {
-    margin-left: 0;
   }
 }
 
@@ -549,14 +297,5 @@ footer {
 
   .nav-item {
     padding: 15px 60px;
-  }
-
-  .upcoming-events > .header {
-    margin-left: 0;
-  }
-
-  .event-3 {
-    margin-top: 0;
-    margin-bottom: 0;
   }
 }
