@@ -192,6 +192,19 @@ footer {
   margin: 20%;
 }
 
+.item > .title {
+  font-family: Gilroy-SemiBold;
+  font-size: xx-large;
+  margin: 0;
+}
+
+.item > p {
+  font-size: 18px;
+  font-family: Gilroy-Light;
+  color: #EBEBEB;
+  font-weight: 100;
+}
+
 @media only screen and (max-width: 768px) {
   /* Navbar and Hamburger Menu */
   label {
@@ -272,7 +285,7 @@ footer {
     margin: 0 0 10% 0;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 300px 300px 300px 300px 300px 300px;
+    grid-template-rows: 500px 500px 500px 500px 500px 500px;
     grid-gap: 20px;
   }
 }
@@ -298,7 +311,7 @@ footer {
     margin: 10%;
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 300px 300px 300px;
+    grid-template-rows: 500px 500px 500px;
   }
 }
 
