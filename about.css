@@ -267,6 +267,15 @@ footer {
     font-size: x-large;
   }
 
+  .row {
+    display: block;
+  }
+
+  .middle-row {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
   .footer-container {
     display: block;
   }
@@ -279,14 +288,6 @@ footer {
 
   .social-icon-container > i {
     left: 0;
-  }
-
-  .wrapper {
-    margin: 0 0 10% 0;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 500px 500px 500px 500px 500px 500px;
-    grid-gap: 20px;
   }
 }
 
@@ -307,11 +308,8 @@ footer {
     left: 0;
   }
 
-  .wrapper {
-    margin: 10%;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 500px 500px 500px;
+  .row {
+    display: flex;
   }
 }
 
