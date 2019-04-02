@@ -207,11 +207,11 @@ button:hover {
 }
 
 .about-us {
-  margin: 10% 0 10% 0;
+  margin: 10%;
 }
 
 .about-us > .title {
-  text-align: left;
+  text-align: center;
   font-family: Gilroy-SemiBold;
   font-size: xx-large;
 }
@@ -346,6 +346,16 @@ footer {
   position: relative;
   top: 12px;
   left: 12px;
+}
+
+/* ABOUT Page */
+.about-title {
+  font-family: Gilroy-Light;
+  letter-spacing: 2px;
+  font-weight: 100;
+  font-size: 50px;
+  text-align: center;
+  margin: 20%;
 }
 
 @media only screen and (max-width: 768px) {
