@@ -507,7 +507,7 @@ footer {
   }
 
   .upcoming-events > .header {
-    margin-left: 0;
+    margin-left: 4%;
   }
 
   .event-1 {
@@ -542,7 +542,7 @@ footer {
   }
 
   .upcoming-events > .header {
-    margin-left: 4%;
+    margin-left: 0;
   }
 
   .event-3 {
