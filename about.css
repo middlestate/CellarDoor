@@ -172,7 +172,8 @@ footer {
   border-radius: 25px;
 }
 
-.social-icon-container > i {
+.social-icon-container > a > i {
+  color: white;
   position: relative;
   top: 12px;
   left: 12px;
@@ -424,7 +425,7 @@ footer {
     padding: 5% 0 5% 0;
   }
 
-  .social-icon-container > i {
+  .social-icon-container > a > i {
     left: 0;
   }
 }
