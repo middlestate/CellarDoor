@@ -10,10 +10,6 @@ html, body {
   color: #ffffff;
 }
 
-hr {
-  border: 0.5px solid #707070;
-}
-
 @font-face {
   font-family: TrixieText;
   src: url(fonts/TrixieText.ttf) format("truetype");
@@ -356,9 +352,14 @@ footer {
     text-align: right;
   }
 
+  .middle-row {
+    border-top: 0.5px solid #707070;
+    border-bottom: 0.5px solid #707070;
+  }
+
   .container > .row {
-    margin-top: 100px;
-    margin-bottom: 100px;
+    /* margin-top: 100px;
+    margin-bottom: 100px; */
     padding: 50px;
   }
 
