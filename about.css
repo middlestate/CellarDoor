@@ -229,6 +229,10 @@ footer {
   background-color: transparent;
 }
 
+.container {
+  margin-bottom: 15%;
+}
+
 @media only screen and (max-width: 768px) {
   /* Navbar and Hamburger Menu */
   label {
