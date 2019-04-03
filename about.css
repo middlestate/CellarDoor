@@ -276,6 +276,10 @@ footer {
     flex-direction: column-reverse;
   }
 
+  .item > .title {
+    text-align: center;
+  }
+
   .footer-container {
     display: block;
   }
@@ -311,6 +315,15 @@ footer {
   .row {
     display: flex;
   }
+
+  .item {
+    width: 50%;
+  }
+
+  .middle-row > .item {
+    text-align: right;
+  }
+
 }
 
 @media only screen and (min-width: 1024px) {
