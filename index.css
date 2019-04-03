@@ -538,6 +538,14 @@ footer {
     left: 0;
   }
 
+  .fa-facebook-f {
+    padding-left: 3px;
+  }
+
+  .fa-instagram {
+    padding-left: 1px;
+  }
+
   .food-and-drinks > .header {
     margin-left: 0;
   }
