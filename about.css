@@ -229,6 +229,10 @@ footer {
   margin: 10px;
 }
 
+.invisible-dot {
+  background-color: transparent;
+}
+
 @media only screen and (max-width: 768px) {
   /* Navbar and Hamburger Menu */
   label {
@@ -304,6 +308,10 @@ footer {
     text-align: center;
   }
 
+  .container > .row {
+    margin-top: 50%;
+  }
+
   .footer-container {
     display: block;
   }
@@ -346,6 +354,12 @@ footer {
 
   .middle-row > .item {
     text-align: right;
+  }
+
+  .container > .row {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 50px;
   }
 
 }
