@@ -128,7 +128,7 @@ footer {
   padding: 5% 0 5% 0;
 }
 
-.footer-container > img {
+.footer-container > a > img {
   width: 100%;
   max-width: 100px;
   max-height: 50px;
