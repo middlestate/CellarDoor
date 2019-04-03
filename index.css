@@ -19,6 +19,10 @@ html, body {
   background-repeat: no-repeat;
 } */
 
+a {
+  text-decoration: none;
+}
+
 hr {
   border: 0.5px solid #707070;
 }

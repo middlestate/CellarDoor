@@ -10,6 +10,10 @@ html, body {
   color: #ffffff;
 }
 
+a {
+  text-decoration: none;
+}
+
 @font-face {
   font-family: TrixieText;
   src: url(fonts/TrixieText.ttf) format("truetype");
