@@ -520,6 +520,11 @@ footer {
     margin-top: 50px;
   }
 
+  .artist-container > a > button {
+    margin-left: 0;
+    display: block;
+  }
+
   .contact {
     right: 0;
   }
