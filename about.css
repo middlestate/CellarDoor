@@ -205,6 +205,30 @@ footer {
   font-weight: 100;
 }
 
+/* Dot shapes */
+
+.dot-square {
+  width: 165px;
+  height: 150px;
+  background-color: transparent;
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.dot-square > .row {
+  display: flex;
+}
+
+.dot {
+  background-color: white;
+  width: 35px;
+  height: 35px;
+  border-radius: 25px;
+  margin: 10px;
+}
+
 @media only screen and (max-width: 768px) {
   /* Navbar and Hamburger Menu */
   label {
