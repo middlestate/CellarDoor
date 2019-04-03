@@ -217,6 +217,61 @@ footer {
   display: flex;
 }
 
+.circle {
+  width: 200px;
+  height: 200px;
+  background: transparent;
+  position: relative;
+  top: 50%;
+  left: 45%;
+}
+
+.circle > .dot {
+  width: 30px;
+  height: 30px;
+  background: white;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle > .dot:nth-child(1) {
+  transform: rotate(0deg) translate(80px);
+}
+.circle > .dot:nth-child(2) {
+  transform: rotate(30deg) translate(80px);
+}
+.circle > .dot:nth-child(3) {
+  transform: rotate(60deg) translate(80px);
+}
+.circle > .dot:nth-child(4) {
+  transform: rotate(90deg) translate(80px);
+}
+.circle > .dot:nth-child(5) {
+  transform: rotate(120deg) translate(80px);
+}
+.circle > .dot:nth-child(6) {
+  transform: rotate(150deg) translate(80px);
+}
+.circle > .dot:nth-child(7) {
+  transform: rotate(180deg) translate(80px);
+}
+.circle > .dot:nth-child(8) {
+  transform: rotate(210deg) translate(80px);
+}
+.circle > .dot:nth-child(9) {
+  transform: rotate(240deg) translate(80px);
+}
+.circle > .dot:nth-child(10) {
+  transform: rotate(270deg) translate(80px);
+}
+.circle > .dot:nth-child(11) {
+  transform: rotate(300deg) translate(80px);
+}
+.circle > .dot:nth-child(12) {
+  transform: rotate(330deg) translate(80px);
+}
+
+
 .dot {
   background-color: white;
   width: 35px;
