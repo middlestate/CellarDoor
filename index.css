@@ -176,6 +176,7 @@ button:hover {
   justify-content: center;
 }
 .event-1, .event-2, .event-3 {
+  height: 300px;
   flex-basis: 200px;
   padding: 1.5%;
   /* margin: 1.5%; */
