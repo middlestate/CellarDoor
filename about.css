@@ -288,6 +288,19 @@ footer {
   margin-bottom: 15%;
 }
 
+@media only screen and (min-width: 320px) {
+  .circle {
+    width: 100px;
+    left: 40%;
+  }
+}
+
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  .circle {
+    left: 45%;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   /* Navbar and Hamburger Menu */
   label {
@@ -350,6 +363,10 @@ footer {
     font-size: x-large;
   }
 
+  .about-intro > .title {
+    font-size: x-large;
+  }
+
   .row {
     display: block;
   }
@@ -361,6 +378,36 @@ footer {
 
   .item > .title {
     text-align: center;
+  }
+
+  .dot-square {
+    width: 135px;
+    height: 120px;
+    background-color: transparent;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .dot {
+    background-color: white;
+    width: 35px;
+    height: 25px;
+    border-radius: 25px;
+    margin: 10px;
+  }
+
+  .invisible-dot {
+    background-color: transparent;
+  }
+  
+  .circle > .dot {
+    width: 30px;
+    height: 30px;
+    background: white;
+    position: absolute;
+    border-radius: 50%;
   }
 
   .container > .row {
