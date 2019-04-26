@@ -146,6 +146,10 @@ main {
   margin-left: 10%;
 }
 
+#loading {
+  font-family: Gilroy-SemiBold;
+}
+
 .upcoming-events > .header > h3 {
   font-family: Gilroy-SemiBold;
   font-size: 21px;
@@ -179,10 +183,9 @@ button:hover {
   flex-wrap: wrap;
   justify-content: center;
 }
-.event-1, .event-2, .event-3 {
+.event {
   height: 300px;
   flex-basis: 200px;
-  padding: 1.5%;
   /* margin: 1.5%; */
   margin: auto;
   border: 0.5px solid #707070;
@@ -194,11 +197,11 @@ button:hover {
   font-size: 13px;
 }
 
-.event-1 > .title, .event-2 > .title, .event-3 > .title {
+.event > .title {
   font-size: 23px;
 }
 
-.event-1 > .description, .event-2 > .description, .event-3 > .description {
+.event > .description {
   font-size: 16px;
   font-family: Gilroy-Light;
   color: #EBEBEB;
@@ -354,6 +357,12 @@ footer {
   left: 12px;
 }
 
+@media only screen and (min-width: 20px) {
+  .event {
+    padding: 5%;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   /* Navbar and Hamburger Menu */
   label {
@@ -420,7 +429,7 @@ footer {
     border: none;
   }
 
-  .event-1, .event-2, .event-3 {
+  .event {
     margin: 25px;
   }
 
@@ -516,13 +525,8 @@ footer {
     margin-left: 4%;
   }
 
-  .event-1 {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-
-  .event-3 {
-    margin-top: 50px;
+  .event {
+    margin-bottom: 5%;
   }
 
   .artist-container > a > button {
@@ -564,8 +568,9 @@ footer {
     margin-left: 0;
   }
 
-  .event-3 {
+  .event {
     margin-top: 0;
     margin-bottom: 0;
+    padding: 1.5%;    
   }
 }
