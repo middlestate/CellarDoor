@@ -158,7 +158,7 @@ main {
   color: #AD0E2B;
 }
 
-button {
+button, .description > a {
   background-color: transparent;
   color: #ffffff;
   border-radius: 25px;
@@ -206,6 +206,15 @@ button:hover {
   font-family: Gilroy-Light;
   color: #EBEBEB;
   font-weight: 100;
+}
+
+.description > a {
+  font-size: 13px;
+  display: block;
+  margin: 0 auto;
+  margin-left: 0;
+  height: 20px;
+  width: 110px;
 }
 
 .details {
