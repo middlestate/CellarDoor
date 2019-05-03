@@ -32,10 +32,6 @@
   <!-- Babel CDN for ES6 -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.24.0/babel.js"></script>
 
-  <!-- Moment JS library for date formatting -->
-  <script src="https://momentjs.com/downloads/moment.js"></script>
-
-
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129539607-4"></script>
   <script>
@@ -193,22 +189,22 @@
 
         console.log(top3events);
 
+        const ord=d=>(31==d||21==d||1==d?"st":22==d||2==d?"nd":23==d||3==d?"rd":"th");
+
         top3events.map((event,i) => {
           let {start,end,summary,description}=event
-          eventDate = new Date(start).toISOString().split('T')[0]
-
-          let formattedDate = moment(eventDate).format("dddd, MMMM Do");
-
-          eventStart = new Date(start).toLocaleTimeString(navigator.language, {hour: '2-digit', minute:'2-digit'});
-          eventEnd = new Date(end).toLocaleTimeString(navigator.language, {hour: '2-digit', minute:'2-digit'});
+          eventDate = new Date(start).toLocaleDateString([],{weekday: 'long', month:'long',day:'numeric'})
+          let th = ord(eventDate.split(' ')[2])
+          eventTime = new Date(start).toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})
+          eventEnd = new Date(end).toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})
           eventCalendar.innerHTML +=
 
             `
               <div class="event">
-                <p class="date">${formattedDate}</p>
+                <p class="date">${eventDate}${th}</p>
                 <h4 class="title">${summary}</h4>
                 <p class="description">${description || ''}</p>
-                <p class="description">${eventStart} To ${eventEnd}</p>
+                <p class="description">${eventTime} To ${eventEnd}</p>
               </div>
             `
         });
