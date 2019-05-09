@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="calendar.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
   <!-- Fonts -->
@@ -56,69 +56,17 @@
         <a href="./calendar.html" class="nav-item calendar">Calendar</a>
         <a href="./comingSoon.html" class="nav-item fd">Food & Drink</a>
       </div>
-    </div>    
+    </div>
   </header>
 
   <main>
-    <div class="title-container">
-      <!-- <h1 class="title">cellar door</h1> -->
-      <img src="images/logo.png" alt="logo">
-      <!-- <h2 class="subtitle">Welcome. Be Cool.</h2> -->
+    <div class="calendar-title">
+      <h1 class="title">Calendar</h1>      
     </div>
 
     <div class="upcoming-events">
-      <div class="header">
-        <h3>upcoming events</h3>
-        <a href="./calendar.html">
-          <button>All Events</button>        
-        </a>
-      </div>
-      <div id="loading"></div>
-      <div class="events-container" id="events-container"></div>
-    </div>
-
-    <div class="about-us">
-      <h2 class="title">Restaurant and Music Hall that defies definition</h2>
-      <p class="description">We are a hub of creative energy pushing the boundaries of collaboration in food, music, and art.
-        Not afraid to explore new territories and shine the light on creators of all kinds - we are here to celebrate our community with you.
-      </p>
-      <a href="./about.html">
-        <button>About</button>      
-      </a>
-    </div>
-
-    <hr>
-
-    <div class="music-container">
-      <div class="artist-container">
-        <h2 class="title">Artist Spotlight</h2>
-        <img src="images/artists.png" alt="artists">
-        <h2 class="artist-name">Mdou Moctar</h2>
-        <h4 class="description">April 19 @ Cellar Door</h4>
-        <a href="https://www.ticketweb.com/event/mdou-moctar-the-cellar-door-tickets/9139615">
-          <button>Buy Tickets</button>        
-        </a>
-        <a href="https://www.youtube.com/watch?v=1pqvY9Oh0tQ">
-          <button>Watch</button>        
-        </a>
-      </div>
-      <div class="spotify-container">
-          <iframe src="https://open.spotify.com/embed/artist/48dgx7iGqLQ3E5KO3pzd94" width="100%" height="100%" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-      </div>
-    </div>
-
-    <hr>
-
-    <div class="food-and-drinks">
-      <div class="header">
-          <h3>Food & Drinks</h3>
-          <a href="./comingSoon.html">
-            <button>Menus</button>          
-          </a>
-      </div>
-      <p class="description">We are a hub of creative energy pushing the boundaries of collaboration in food, music, and art.
-          Not afraid to explore new territories and shine the light on creators of all kinds - we are here to celebrate our community with you.
-      </p>
+        <div id="loading"></div>
+        <div class="events-container" id="events-container"></div>
     </div>
   </main>
 
@@ -156,8 +104,7 @@
     </div>
   </footer>
 </body>
-
-  <script>
+<script>
     const eventCalendar = document.getElementById("events-container");
     const loading = document.getElementById("loading")
 
@@ -179,24 +126,26 @@
       if (events.length ) {
         loading.innerHTML=``;
 
-        let top3events = [];
+        let top12events = [];
 
         for(let i = 0; i < events.length; i++){
-          if(top3events.length < 3){
-            top3events.push(events[i]);
+          if(top12events.length < 12){
+            top12events.push(events[i]);
           }
         }
 
-        console.log(top3events);
+        console.log(top12events);
 
         const ord=d=>(31==d||21==d||1==d?"st":22==d||2==d?"nd":23==d||3==d?"rd":"th");
 
-        top3events.map((event,i) => {
+        top12events.map((event,i) => {
           let {start,end,summary,description}=event
           eventDate = new Date(start).toLocaleDateString([],{weekday: 'long', month:'long',day:'numeric'})
+          eventMonth = new Date(start).toLocaleDateString({month:'long'})
           let th = ord(eventDate.split(' ')[2])
           eventTime = new Date(start).toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})
           eventEnd = new Date(end).toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})
+          
           eventCalendar.innerHTML +=
 
             `

@@ -1,0 +1,457 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  /* background-color: #000000; */
+
+  background: url("images/main_background.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+hr {
+  border: 0.5px solid #707070;
+}
+
+@font-face {
+  font-family: TrixieText;
+  src: url(fonts/TrixieText.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: Gilroy-Light;
+  src: url(fonts/Radomir\ Tinkov\ -\ Gilroy-Light.otf) format("opentype");
+}
+
+@font-face {
+  font-family: Gilroy-SemiBold;
+  src: url(fonts/Radomir\ Tinkov\ -\ Gilroy-SemiBold.otf) format("opentype");
+}
+
+/* Navbar and Hamburger Menu */
+.nav {
+  text-align: right;
+  height: 70px;
+  line-height: 70px;
+}
+
+.menu {
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  /* margin-top: 1%; */
+}
+
+.menu a {
+  clear: right;
+  text-decoration: none;
+  color: #EBEBEB;
+  line-height: 70px;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.nav-item {
+  padding: 15px 60px;
+  font-size: 14px;
+}
+
+.community {
+  left: 10px;
+}
+
+.about-us {
+  left: 4px;
+}
+
+.calendar {
+  right: 4px;
+}
+
+.fd {
+  right: 10px;
+}
+
+.cellar-door-icon {
+  padding: 40px 35px;
+}
+
+.cellar-door-icon > img {
+  width: 30px;
+  position: relative;
+  top: 15px;
+}
+
+label {
+  margin: 0 40px 0 0;
+  font-size: 25px;
+  line-height: 70px;
+  display: none;
+  width: 25px;
+  float: right;
+}
+
+#toggle {
+  display: none;
+}
+
+/* Main Content */
+main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: center;
+  width: 50%;
+  margin: auto;
+  margin-left: 10%;
+}
+
+#loading {
+  font-family: Gilroy-SemiBold;
+}
+
+.upcoming-events > .header > h3 {
+  font-family: Gilroy-SemiBold;
+  font-size: 21px;
+  margin-left: 3%;
+  letter-spacing: 1px;
+  color: #AD0E2B;
+}
+
+button, .description > a {
+  background-color: transparent;
+  color: #ffffff;
+  border-radius: 25px;
+  width: 140px;
+  height: 33px;
+  border: 2px solid #AD0E2B;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1px;
+  line-height: 20px;
+  margin: 10px;
+  padding: 5px;
+  text-align: center;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.events-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.event {
+  height: 300px;
+  flex-basis: 200px;
+  /* margin: 1.5%; */
+  margin: auto;
+  border: 0.5px solid #707070;
+  min-width: 250px;
+  font-family: Gilroy-SemiBold;
+}
+
+.date {
+  font-size: 13px;
+}
+
+.event > .title {
+  font-size: 23px;
+}
+
+.event > .description {
+  font-size: 16px;
+  font-family: Gilroy-Light;
+  color: #EBEBEB;
+  font-weight: 100;
+}
+
+.description > a {
+  font-size: 13px;
+  display: block;
+  margin: 0 auto;
+  margin-left: 0;
+  height: 20px;
+  width: 110px;
+}
+
+.details {
+  font-weight: 100;
+  letter-spacing: 1px;
+  color: #AD0E2B;
+}
+
+.calendar-title > .title {
+  font-family: Gilroy-Light;
+  letter-spacing: 2px;
+  font-weight: 100;
+  font-size: 50px;
+  text-align: center;
+  margin: 15%;
+}
+
+footer {
+  background-color: #AD0E2B;
+  margin-top: 20%;
+}
+
+.footer-container {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  padding: 5% 0 5% 0;
+}
+
+.footer-container > a > img {
+  width: 100%;
+  max-width: 100px;
+  max-height: 50px;
+  display: block;
+  margin: 0 auto;
+}
+
+.contact, .social-media {
+  width: max-content;
+  margin: auto;
+  position: relative;
+}
+
+.contact {
+  right: 10%;
+  font-weight: bold;
+}
+
+.contact > h4 {
+  color: #000000;
+  font-family: sans-serif;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+.contact > h5 {
+  font-family: Gilroy-SemiBold;
+  margin-top: 10px;
+}
+
+.social-media {
+  display: flex;
+  left: 10%;
+}
+
+.social-icon-container {
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+  background-color: black;
+  border-radius: 25px;
+}
+
+.social-icon-container > a > i {
+  color: white;
+  position: relative;
+  top: 12px;
+  left: 12px;
+}
+
+@media only screen and (min-width: 20px) {
+  .calendar-title > .title {
+    font-size: 35px;
+  }
+
+  .event {
+    padding: 5%;
+    height: 350px;
+  }
+}
+
+@media only screen and (min-width: 425px) {
+  .calendar-title > .title {
+    font-size: 50px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* Navbar and Hamburger Menu */
+  label {
+    display: block;
+    cursor: pointer;
+  }
+
+  .menu {
+    width: 100%;
+    display: none;
+    margin-top: 0;
+  }
+
+  .menu a {
+    display: block;
+    border-bottom: 1px solid black;
+    margin: 0;
+    background-color: #ffffff;
+    color: #000000;
+  }
+
+  #toggle:checked + .menu {
+    display: block;
+  }
+
+  main {
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  .header {
+    justify-content: center;
+    padding: 5%;
+    min-width: 150px;
+    max-width: 155px;
+    margin: 0 auto;
+  }
+
+  .nav-item {
+    border-top: none;
+    border-bottom: none;
+    padding: 0px;
+  }
+
+  .community {
+    left: 0px;
+  }
+  
+  .about-us {
+    left: 0px;
+    margin: 25% 0 25% 0;
+  }
+  
+  .calendar {
+    right: 0px;
+  }
+  
+  .fd {
+    right: 0px;
+  }
+  
+  .cellar-door-icon {
+    padding: 0px;
+    border: none;
+  }
+
+  .event {
+    margin: 25px;
+  }
+
+  .artist-container > button {
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .artist-container > .description {
+    font-size: large;
+  }
+
+  .artist-name {
+    font-size: x-large;
+  }
+
+  .spotify-container {
+    height: 400px;
+  }
+
+  .food-and-drinks {
+    margin: 25% 0 25% 0;
+  }
+
+  .food-and-drinks > .header > h3 {
+    font-size: x-large;
+    text-align: center;
+  }
+
+  .footer-container {
+    display: block;
+  }
+
+  .contact, .social-media {
+    position: inherit;
+    text-align: center;
+    padding: 5% 0 5% 0;
+  }
+
+  .social-icon-container > a > i {
+    left: 0;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  main, .menu, .footer-container {
+    max-width: 750px;
+  }
+
+  .nav-item {
+    padding: 15px 30px;
+  }
+
+  .upcoming-events > .header {
+    margin-left: 4%;
+  }
+
+  .event {
+    margin-bottom: 5%;
+  }
+
+  .contact {
+    right: 0;
+  }
+
+  .social-media {
+    left: 0;
+  }
+
+  .fa-facebook-f {
+    padding-left: 3px;
+  }
+
+  .fa-instagram {
+    padding-left: 1px;
+  }
+
+  .food-and-drinks > .header {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  main, .menu, .footer-container {
+    max-width: 1200px;
+  }
+
+  .nav-item {
+    padding: 15px 60px;
+  }
+
+  .upcoming-events > .header {
+    margin-left: 0;
+  }
+
+  .event {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 1.5%;
+  }
+}
