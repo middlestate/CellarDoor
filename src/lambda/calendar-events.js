@@ -25,8 +25,6 @@ const Authorize = async () => {
 }
 
 const getEvents = async ({ maxEvents = null, date = null }) => {
-  maxEvents = parseInt(maxEvents)
-  console.log(maxEvents)
   let _query = {
     calendarId: CALENDAR_ID,
     timeMin: (new Date()).toISOString(),
@@ -62,13 +60,6 @@ exports.handler = (event, context, callback) => {
     }
     if (events.length) {
       calEvents.events = events.map(event => ({
-        id: event.id,
-        status: event.status,
-        iCalUID: event.iCalUID,
-        recurringEventId: event.recurringEventId,
-        htmlLink: event.htmlLink,
-        extendedPropertiesShared: event.extendedProperties.shared,
-        extendedPropertiesPrivate: event.extendedProperties.private,
         start: event.start.dateTime || event.start.date,
         end: event.end.dateTime || event.end.date,
         summary: event.summary || '',
