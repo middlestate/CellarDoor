@@ -1,0 +1,4 @@
+[build]
+  command = "netlify-lambda build src/lambda"
+  functions = "lambda"
+  publish = "build"

@@ -1,0 +1,15 @@
+{
+  "name": "CellarDoor",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:middlestate/CellarDoor.git",
+  "author": "Paul Hosler <pahosler@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "netlify-lambda": "^1.4.13"
+  },
+  "dependencies": {
+    "chai": "^4.2.0",
+    "encoding": "^0.1.12"
+  }
+}

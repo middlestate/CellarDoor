@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="favicons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="favicons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="favicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Babel CDN for ES6 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.24.0/babel.js"></script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129539607-4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-129539607-4');
+  </script>
+
+  <title>Cellar Door</title>
+</head>
+<body onload="getCalendar()">
+  <header>
+    <div class="nav">
+      <label for="toggle">&#9776;</label>
+      <input type="checkbox" id="toggle" />
+      <div class="menu">
+        <a href="./comingSoon.html" class="nav-item community">Community</a>
+        <a href="./about.html" class="nav-item about-us">About Us</a>
+        <a href="./index.html" class="cellar-door-icon"><img src="images/dooricon.png" alt="door_icon"></a>
+        <a href="./calendar.html" class="nav-item calendar">Calendar</a>
+        <a href="./comingSoon.html" class="nav-item fd">Food & Drink</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="title-container">
+      <!-- <h1 class="title">cellar door</h1> -->
+      <img src="images/logo.png" alt="logo">
+      <!-- <h2 class="subtitle">Welcome. Be Cool.</h2> -->
+    </div>
+
+    <div class="upcoming-events">
+      <div class="header">
+        <h3>upcoming events</h3>
+        <a href="./calendar.html">
+          <button>All Events</button>
+        </a>
+      </div>
+      <div id="loading"></div>
+      <div class="events-container" id="events-container"></div>
+    </div>
+
+    <div class="about-us">
+      <h2 class="title">Restaurant and Music Hall that defies definition</h2>
+      <p class="description">We are a hub of creative energy pushing the boundaries of collaboration in food, music, and art.
+        Not afraid to explore new territories and shine the light on creators of all kinds - we are here to celebrate our community with you.
+      </p>
+      <a href="./about.html">
+        <button>About</button>
+      </a>
+    </div>
+
+    <hr>
+
+        <div class="music-container">
+      <div class="artist-container">
+        <h2 class="title">Artist Spotlight</h2>
+        <img src="images/artist.jpg" alt="artists">
+        <h2 class="artist-name">Mattson 2</h2>
+        <h4 class="description">Wednesday, June 19, 2019 @ Cellar Door</h4>
+        <a href="https://www.ticketweb.com/event/mattson-2-the-cellar-door-tickets/9367765">
+          <button>Buy Tickets</button>
+        </a>
+        <a href="http://www.mattson2.com/">
+          <button>Website</button>
+        </a>
+      </div>
+      <div class="spotify-container">
+          <iframe src="https://open.spotify.com/embed/artist/3YoL2CCR3wyqJndcEDBwBH" width="100%" height="100%" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="food-and-drinks">
+      <div class="header">
+          <h3>Food & Drinks</h3>
+          <a href="./comingSoon.html">
+            <button>Menus</button>
+          </a>
+      </div>
+      <p class="description">We are a hub of creative energy pushing the boundaries of collaboration in food, music, and art.
+          Not afraid to explore new territories and shine the light on creators of all kinds - we are here to celebrate our community with you.
+      </p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="contact">
+        <h4>Cellar Door Help Line</h4>
+        <h5>559-239-4004</h5>
+      </div>
+      <a href="./index.html">
+        <img src="images/footer_logo.png" alt="logo">
+      </a>
+      <div class="social-media">
+        <div class="social-icon-container">
+          <a href="https://www.facebook.com/cellardoor101/">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+        </div>
+        <div class="social-icon-container">
+          <a href="https://twitter.com/cellardoor101?lang=en">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </div>
+        <div class="social-icon-container">
+          <a href="https://www.youtube.com/watch?v=1pqvY9Oh0tQ">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </div>
+        <div class="social-icon-container">
+          <a href="http://instagram.com/cellardoor559">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+  <script>
+    const eventCalendar = document.getElementById("events-container");
+    const loading = document.getElementById("loading")
+
+    const URI = "https://cellardoor1010.netlify.com/.netlify/functions/calendar-events?maxEvents=3";
+    const getCalendar=()=>{
+      loading.innerHTML=`<h1 class="loading">Loading...</h1>`
+      fetch(URI, {
+        method: "GET",
+      })
+        .then(response => response.json())
+        .then(json => {
+          calendar(json.events)
+        })
+        .catch(err=>{console.log("error:",err,"calendar data is probably formatted incorrectly")})
+    };
+    const ord=d=>(31==d||21==d||1==d?"st":22==d||2==d?"nd":23==d||3==d?"rd":"th");
+    const calendar = events => {
+      if (events.length ) {
+        loading.innerHTML=``;
+        events.map((event) => {
+          let {start,end,summary,description}=event
+          eventDate = new Date(start).toLocaleDateString([],{weekday: 'long', month:'long',day:'numeric'})
+          let th = ord(eventDate.split(' ')[2])
+          eventTime = new Date(start).toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})
+          eventEnd = new Date(end).toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})
+          eventCalendar.innerHTML +=
+            `
+              <div class="event">
+                <p class="date">${eventDate}${th}</p>
+                <h4 class="title">${summary}</h4>
+                <p class="description">${description || ''}</p>
+                <p class="description event-time">${eventTime} To ${eventEnd}</p>
+              </div>
+            `
+        });
+      }
+    };
+  </script>
+</html>
