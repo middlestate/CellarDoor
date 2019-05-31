@@ -25,6 +25,7 @@ const Authorize = async () => {
 }
 
 const getEvents = async ({ maxEvents = null, date = null }) => {
+  maxEvents = parseInt(maxEvents)
   console.log(maxEvents)
   let _query = {
     calendarId: CALENDAR_ID,
@@ -51,7 +52,7 @@ const getEvents = async ({ maxEvents = null, date = null }) => {
 }
 
 exports.handler = (event, context, callback) => {
-  let { parseInt(maxEvents), date } = event.queryStringParameters
+  let { maxEvents, date } = event.queryStringParameters
   getEvents({ maxEvents, date }).then(res => {
     const events = res.data.items
     const calEvents = {
