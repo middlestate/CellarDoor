@@ -37,10 +37,10 @@ const getEvents = async ({ maxEvents = null, date = null }) => {
   if (date && !maxEvents) {
     _query.timeMin = `${date.replace(/\"/g, '')}T05:00:00.000Z`
     _query.timeMax = `${date.replace(/\"/g, '')}T23:30:00-05:00`
-    _query.maxResults = parseInt(maxEvents) || 1
+    _query.maxResults = maxEvents || 1
   } else if(date && maxEvents || !date && maxEvents) {
       _query.timeMin =  date ? `${date}T05:00:00.000Z` : (new Date()).toISOString()
-      _query.maxResults = parseInt(maxEvents)
+      _query.maxResults = maxEvents
   } else {
     // defaults...
   }
@@ -51,7 +51,7 @@ const getEvents = async ({ maxEvents = null, date = null }) => {
 }
 
 exports.handler = (event, context, callback) => {
-  let { maxEvents, date } = event.queryStringParameters
+  let { parseInt(maxEvents), date } = event.queryStringParameters
   getEvents({ maxEvents, date }).then(res => {
     const events = res.data.items
     const calEvents = {
