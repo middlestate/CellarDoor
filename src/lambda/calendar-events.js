@@ -24,7 +24,8 @@ const Authorize = async () => {
   })
 }
 
-const getEvents = async ({ maxEvents= null, date= null }) => {
+const getEvents = async ({ maxEvents = null, date = null }) => {
+  console.log(maxEvents)
   let _query = {
     calendarId: CALENDAR_ID,
     timeMin: (new Date()).toISOString(),
@@ -36,10 +37,10 @@ const getEvents = async ({ maxEvents= null, date= null }) => {
   if (date && !maxEvents) {
     _query.timeMin = `${date.replace(/\"/g, '')}T05:00:00.000Z`
     _query.timeMax = `${date.replace(/\"/g, '')}T23:30:00-05:00`
-    _query.maxResults = maxEvents || 1
+    _query.maxResults = parseInt(maxEvents) || 1
   } else if(date && maxEvents || !date && maxEvents) {
       _query.timeMin =  date ? `${date}T05:00:00.000Z` : (new Date()).toISOString()
-      _query.maxResults = maxEvents
+      _query.maxResults = parseInt(maxEvents)
   } else {
     // defaults...
   }
