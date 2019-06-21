@@ -13,6 +13,10 @@ body {
   height: 100vh;
 }
 
+main {
+  height: 1000px;
+}
+
 a {
   text-decoration: none;
 }
@@ -109,8 +113,8 @@ main {
 
 footer {
   background-color: #AD0E2B;
-  position: absolute;
-  bottom: 0;
+  /* position: absolute;
+  bottom: 0; */
   width: 100%;
 }
 
