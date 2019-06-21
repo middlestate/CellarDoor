@@ -25,6 +25,8 @@ a {
   text-align: right;
   height: 70px;
   line-height: 70px;
+  position: relative;
+  z-index: 5;
 }
 
 .menu {
