@@ -4,6 +4,8 @@ html {
   margin: 0;
   background-color: #000000;
   color: #ffffff;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 a {
