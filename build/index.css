@@ -182,7 +182,7 @@ button:hover {
   justify-content: center;
 }
 .event {
-  height: 300px;
+  height: auto;
   flex-basis: 200px;
   position: relative;
   margin: auto;
@@ -191,10 +191,10 @@ button:hover {
   font-family: Gilroy-SemiBold;
 }
 
-.event-time {
+/* .event-time {
   position: absolute;
   bottom: 15px;  
-}
+} */
 
 .date {
   font-size: 13px;
@@ -217,8 +217,9 @@ button:hover {
   margin: 0 auto;
   margin-left: 0;
   height: 20px;
-  width: 110px;
+  width: max-content;
   margin-top: 5%;
+  padding: 5px 10px;
 }
 
 .details {
