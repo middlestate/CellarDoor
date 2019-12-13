@@ -108,7 +108,8 @@
     const eventCalendar = document.getElementById("events-container");
     const loading = document.getElementById("loading")
 
-    const URI = "https://cellardoor101.netlify.com/.netlify/functions/calendar-events?maxEvents=12";
+    // Set number of events at the end of URI
+    const URI = "https://cellardoor101.netlify.com/.netlify/functions/calendar-events?maxEvents=30";
     const getCalendar=()=>{
       loading.innerHTML=`<h1 class="loading">Loading...</h1>`
       fetch(URI, {
